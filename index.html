@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Fiqh</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("bg_halaman.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 25px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #446644;
+      margin-bottom: 30px;
+    }
+    .question { text-align: left; margin-bottom: 20px; }
+    label {
+      display: block;
+      background: #eef2ff;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    label:hover { background: #dbe4ff; }
+    button {
+      background: #B5C99A;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+    button:hover { background: #B5C99A; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Fiqh</h1>
+
+    <form id="quizForm">
+<div class="question">
+  <h3>1. Secara bahasa, shalat berarti …</h3>
+  <label><input type="radio" name="q1" value="A"> Doa</label>
+  <label><input type="radio" name="q1" value="B"> Dzikir</label>
+  <label><input type="radio" name="q1" value="C"> Sujud</label>
+  <label><input type="radio" name="q1" value="D"> Ibadah khusus</label>
+</div>
+
+<div class="question">
+  <h3>2. Shalat secara istilah adalah …</h3>
+  <label><input type="radio" name="q2" value="A"> Doa dan dzikir</label>
+  <label><input type="radio" name="q2" value="B"> Perbuatan khusus yang dimulai dengan takbir dan diakhiri dengan salam</label>
+  <label><input type="radio" name="q2" value="C"> Membaca Al-Fatihah</label>
+  <label><input type="radio" name="q2" value="D"> Sujud dan ruku’</label>
+</div>
+
+<div class="question">
+  <h3>3. Shalat lima waktu disyariatkan pada peristiwa …</h3>
+  <label><input type="radio" name="q3" value="A"> Perang Badar</label>
+  <label><input type="radio" name="q3" value="B"> Isra’ Mi’raj</label>
+  <label><input type="radio" name="q3" value="C"> Hijrah Nabi</label>
+  <label><input type="radio" name="q3" value="D"> Fathu Makkah</label>
+</div>
+
+<div class="question">
+  <h3>4. Awalnya shalat diwajibkan … kali sehari semalam, kemudian diringankan menjadi lima.</h3>
+  <label><input type="radio" name="q4" value="A"> 25</label>
+  <label><input type="radio" name="q4" value="B"> 30</label>
+  <label><input type="radio" name="q4" value="C"> 40</label>
+  <label><input type="radio" name="q4" value="D"> 50</label>
+</div>
+
+<div class="question">
+  <h3>5. Dalil kewajiban shalat terdapat dalam QS. …</h3>
+  <label><input type="radio" name="q5" value="A"> Al-Baqarah: 43</label>
+  <label><input type="radio" name="q5" value="B"> Al-Anfal: 11</label>
+  <label><input type="radio" name="q5" value="C"> Al-Ma’idah: 6</label>
+  <label><input type="radio" name="q5" value="D"> Al-Furqan: 48</label>
+</div>
+
+<div class="question">
+  <h3>6. Hadis “Islam dibangun atas lima perkara, salah satunya menegakkan shalat” diriwayatkan oleh …</h3>
+  <label><input type="radio" name="q6" value="A"> Abu Dawud</label>
+  <label><input type="radio" name="q6" value="B"> Bukhari dan Muslim</label>
+  <label><input type="radio" name="q6" value="C"> Tirmidzi</label>
+  <label><input type="radio" name="q6" value="D"> Ahmad</label>
+</div>
+
+<div class="question">
+  <h3>7. Menurut ijma’ ulama, meninggalkan shalat lima waktu dengan sengaja hukumnya …</h3>
+  <label><input type="radio" name="q7" value="A"> Dosa kecil</label>
+  <label><input type="radio" name="q7" value="B"> Makruh</label>
+  <label><input type="radio" name="q7" value="C"> Dosa besar, bahkan kufur menurut sebagian ulama</label>
+  <label><input type="radio" name="q7" value="D"> Dimaafkan</label>
+</div>
+
+<div class="question">
+  <h3>8. Shalat jenazah termasuk shalat …</h3>
+  <label><input type="radio" name="q8" value="A"> Fardhu ‘ain</label>
+  <label><input type="radio" name="q8" value="B"> Sunnah muakkadah</label>
+  <label><input type="radio" name="q8" value="C"> Sunnah ghairu muakkadah</label>
+  <label><input type="radio" name="q8" value="D"> Fardhu kifayah</label>
+</div>
+
+<div class="question">
+  <h3>9. Contoh shalat sunnah muakkadah adalah …</h3>
+  <label><input type="radio" name="q9" value="A"> Tahajjud</label>
+  <label><input type="radio" name="q9" value="B"> Shalat dhuha</label>
+  <label><input type="radio" name="q9" value="C"> Shalat witir</label>
+  <label><input type="radio" name="q9" value="D"> Shalat tasbih</label>
+</div>
+
+<div class="question">
+  <h3>10. Shalat sunnah rawatib yang paling ditekankan adalah …</h3>
+  <label><input type="radio" name="q10" value="A"> Qabliyah Subuh</label>
+  <label><input type="radio" name="q10" value="B"> Ba’diyah Isya</label>
+  <label><input type="radio" name="q10" value="C"> Qabliyah Dzuhur</label>
+  <label><input type="radio" name="q10" value="D"> Ba’diyah Maghrib</label>
+</div>
+
+<div class="question">
+  <h3>11. Orang yang meninggalkan shalat dengan sengaja “terlepas dari jaminan Allah” adalah hadis riwayat …</h3>
+  <label><input type="radio" name="q11" value="A"> Bukhari</label>
+  <label><input type="radio" name="q11" value="B"> Muslim</label>
+  <label><input type="radio" name="q11" value="C"> Ahmad</label>
+  <label><input type="radio" name="q11" value="D"> Abu Dawud</label>
+</div>
+
+<div class="question">
+  <h3>12. Anak mulai diperintahkan shalat pada usia …</h3>
+  <label><input type="radio" name="q12" value="A"> 5 tahun</label>
+  <label><input type="radio" name="q12" value="B"> 7 tahun</label>
+  <label><input type="radio" name="q12" value="C"> 9 tahun</label>
+  <label><input type="radio" name="q12" value="D"> 10 tahun</label>
+</div>
+
+<div class="question">
+  <h3>13. Wanita yang haid tidak diwajibkan shalat, dan shalat yang ditinggalkan …</h3>
+  <label><input type="radio" name="q13" value="A"> Wajib qadha</label>
+  <label><input type="radio" name="q13" value="B"> Tidak wajib qadha</label>
+  <label><input type="radio" name="q13" value="C"> Sunnah qadha</label>
+  <label><input type="radio" name="q13" value="D"> Haram qadha</label>
+</div>
+
+<div class="question">
+  <h3>14. Salah satu syarat sah shalat adalah …</h3>
+  <label><input type="radio" name="q14" value="A"> Membaca doa qunut</label>
+  <label><input type="radio" name="q14" value="B"> Menghadap kiblat</label>
+  <label><input type="radio" name="q14" value="C"> Membaca surat Al-Ikhlas</label>
+  <label><input type="radio" name="q14" value="D"> Duduk iftirasy</label>
+</div>
+
+<div class="question">
+  <h3>15. Rukun shalat yang pertama adalah …</h3>
+  <label><input type="radio" name="q15" value="A"> Takbiratul ihram</label>
+  <label><input type="radio" name="q15" value="B"> Niat</label>
+  <label><input type="radio" name="q15" value="C"> Berdiri bagi yang mampu</label>
+  <label><input type="radio" name="q15" value="D"> Membaca Al-Fatihah</label>
+</div>
+
+<div class="question">
+  <h3>16. Membaca Al-Fatihah adalah rukun shalat karena Rasulullah ﷺ bersabda …</h3>
+  <label><input type="radio" name="q16" value="A"> “Shalat adalah tiang agama”</label>
+  <label><input type="radio" name="q16" value="B"> “Tidak ada shalat bagi yang tidak membaca Fatihah”</label>
+  <label><input type="radio" name="q16" value="C"> “Shalatlah sebagaimana kalian melihat aku shalat”</label>
+  <label><input type="radio" name="q16" value="D"> “Shalat itu cahaya”</label>
+</div>
+
+<div class="question">
+  <h3>17. Duduk tasyahhud akhir hukumnya …</h3>
+  <label><input type="radio" name="q17" value="A"> Sunnah muakkadah</label>
+  <label><input type="radio" name="q17" value="B"> Wajib</label>
+  <label><input type="radio" name="q17" value="C"> Rukun</label>
+  <label><input type="radio" name="q17" value="D"> Makruh bila ditinggalkan</label>
+</div>
+
+<div class="question">
+  <h3>18. Shalat jama’ artinya …</h3>
+  <label><input type="radio" name="q18" value="A"> Menggabungkan dua shalat fardhu dalam satu waktu</label>
+  <label><input type="radio" name="q18" value="B"> Memendekkan shalat empat rakaat menjadi dua rakaat</label>
+  <label><input type="radio" name="q18" value="C"> Shalat sunnah rawatib</label>
+  <label><input type="radio" name="q18" value="D"> Shalat sunnah malam</label>
+</div>
+
+<div class="question">
+  <h3>19. Shalat qashar hanya berlaku untuk …</h3>
+  <label><input type="radio" name="q19" value="A"> Semua shalat</label>
+  <label><input type="radio" name="q19" value="B"> Shalat yang empat rakaat (Dzuhur, Ashar, Isya)</label>
+  <label><input type="radio" name="q19" value="C"> Shalat Subuh dan Maghrib</label>
+  <label><input type="radio" name="q19" value="D"> Shalat sunnah</label>
+</div>
+
+<div class="question">
+  <h3>20. Jarak minimal safar untuk boleh qashar menurut mazhab Syafi’i adalah sekitar …</h3>
+  <label><input type="radio" name="q20" value="A"> 20 km</label>
+  <label><input type="radio" name="q20" value="B"> 40 km</label>
+  <label><input type="radio" name="q20" value="C"> 80–90 km</label>
+  <label><input type="radio" name="q20" value="D"> 100 km</label>
+</div>
+
+      <!-- dst. sampai q20 -->
+
+      <button type="button" onclick="cekHasil()">Kirim Jawaban</button>
+    </form>
+  </div>
+
+  <script>
+    const kunci = {
+      q1: "A",
+      q2: "B",
+      q3: "B",
+      q4: "D",
+      q5: "A",
+      q6: "B",
+      q7: "C",
+      q8: "D",
+      q9: "C",
+      q10: "A",
+      q11: "C",
+      q12: "B",
+      q13: "B",
+      q14: "B",
+      q15: "B",
+      q16: "B",
+      q17: "C",
+      q18: "A",
+      q19: "B",
+      q20: "C"
+    };
+
+    function cekHasil() {
+      let benar = 0;
+      const total = Object.keys(kunci).length;
+
+      for (let key in kunci) {
+        const jawab = document.querySelector(`input[name="${key}"]:checked`);
+        if (jawab && jawab.value === kunci[key]) benar++;
+      }
+
+      const nilai = Math.round((benar / total) * 100);
+
+      localStorage.setItem("nilaiAkhir", nilai);
+      localStorage.setItem("jawabanBenar", benar);
+      localStorage.setItem("totalSoal", total);
+
+      window.location.href = "hasilbab2.html";
+    }
+  </script>
+</body>
+</html>
