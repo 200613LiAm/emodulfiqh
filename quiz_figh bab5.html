@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Fiqh</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("bg_halaman.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 25px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #446644;
+      margin-bottom: 30px;
+    }
+    .question { text-align: left; margin-bottom: 20px; }
+    label {
+      display: block;
+      background: #eef2ff;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    label:hover { background: #dbe4ff; }
+    button {
+      background: #B5C99A;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+    button:hover { background: #B5C99A; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Fiqh</h1>
+
+    <form id="quizForm">
+       <!-- ================== SOAL PILIHAN GANDA ================== -->
+      <div class="question">
+        <h3>1. Secara bahasa, kata haji berarti...</h3>
+        <label><input type="radio" name="q1" value="A"> Berkunjung ke tempat ramai</label>
+        <label><input type="radio" name="q1" value="B"> Menyengaja menuju sesuatu yang diagungkan</label>
+        <label><input type="radio" name="q1" value="C"> Menghormati tamu</label>
+        <label><input type="radio" name="q1" value="D"> Membersihkan diri</label>
+      </div>
+
+      <div class="question">
+        <h3>2. Definisi haji menurut Imam An-Nawawi adalah...</h3>
+        <label><input type="radio" name="q2" value="A"> Berkunjung ke Baitullah kapan saja</label>
+        <label><input type="radio" name="q2" value="B"> Menunaikan ibadah tertentu di Baitullah pada waktu tertentu dengan tata cara tertentu</label>
+        <label><input type="radio" name="q2" value="C"> Melakukan thawaf dan sa’i di Ka’bah</label>
+        <label><input type="radio" name="q2" value="D"> Beribadah di Makkah tanpa batas waktu</label>
+      </div>
+
+      <div class="question">
+        <h3>3. Haji wajib dilaksanakan sekali seumur hidup bagi...</h3>
+        <label><input type="radio" name="q3" value="A"> Semua orang tanpa kecuali</label>
+        <label><input type="radio" name="q3" value="B"> Muslim yang mampu secara finansial dan fisik</label>
+        <label><input type="radio" name="q3" value="C"> Muslim yang tinggal di Makkah</label>
+        <label><input type="radio" name="q3" value="D"> Semua umat manusia</label>
+      </div>
+
+      <div class="question">
+        <h3>4. Dalil kewajiban haji terdapat dalam ayat...</h3>
+        <label><input type="radio" name="q4" value="A"> QS. Al-Baqarah: 196</label>
+        <label><input type="radio" name="q4" value="B"> QS. Ali ‘Imran: 97</label>
+        <label><input type="radio" name="q4" value="C"> QS. At-Taubah: 28</label>
+        <label><input type="radio" name="q4" value="D"> QS. Al-Baqarah: 183</label>
+      </div>
+
+      <div class="question">
+        <h3>5. Secara bahasa, umrah berarti...</h3>
+        <label><input type="radio" name="q5" value="A"> Menyempurnakan ibadah</label>
+        <label><input type="radio" name="q5" value="B"> Berkunjung atau mengunjungi tempat ramai</label>
+        <label><input type="radio" name="q5" value="C"> Menjalankan syiar Islam</label>
+        <label><input type="radio" name="q5" value="D"> Menetap di Makkah</label>
+      </div>
+
+      <div class="question">
+        <h3>6. Rukun haji yang paling utama dan menentukan sahnya haji adalah...</h3>
+        <label><input type="radio" name="q6" value="A"> Thawaf</label>
+        <label><input type="radio" name="q6" value="B"> Sa’i</label>
+        <label><input type="radio" name="q6" value="C"> Wukuf di Arafah</label>
+        <label><input type="radio" name="q6" value="D"> Tahallul</label>
+      </div>
+
+      <div class="question">
+        <h3>7. Perbedaan utama antara haji dan umrah adalah...</h3>
+        <label><input type="radio" name="q7" value="A"> Haji hanya sunnah, umrah wajib</label>
+        <label><input type="radio" name="q7" value="B"> Haji ada wukuf di Arafah, umrah tidak</label>
+        <label><input type="radio" name="q7" value="C"> Haji bisa kapan saja, umrah hanya bulan haji</label>
+        <label><input type="radio" name="q7" value="D"> Haji lebih singkat daripada umrah</label>
+      </div>
+
+      <div class="question">
+        <h3>8. Dalil kewajiban umrah terdapat dalam ayat...</h3>
+        <label><input type="radio" name="q8" value="A"> QS. Al-Baqarah: 196</label>
+        <label><input type="radio" name="q8" value="B"> QS. Al-Baqarah: 158</label>
+        <label><input type="radio" name="q8" value="C"> QS. Ali ‘Imran: 97</label>
+        <label><input type="radio" name="q8" value="D"> QS. Al-Maidah: 95</label>
+      </div>
+
+      <div class="question">
+        <h3>9. Hadis “Islam dibangun atas lima perkara…” menunjukkan bahwa haji adalah...</h3>
+        <label><input type="radio" name="q9" value="A"> Sunnah muakkadah</label>
+        <label><input type="radio" name="q9" value="B"> Wajib kifayah</label>
+        <label><input type="radio" name="q9" value="C"> Rukun Islam</label>
+        <label><input type="radio" name="q9" value="D"> Amalan sunnah</label>
+      </div>
+
+      <div class="question">
+        <h3>10. Umrah menurut jumhur ulama hukumnya...</h3>
+        <label><input type="radio" name="q10" value="A"> Wajib sekali seumur hidup</label>
+        <label><input type="radio" name="q10" value="B"> Sunnah biasa</label>
+        <label><input type="radio" name="q10" value="C"> Fardhu kifayah</label>
+        <label><input type="radio" name="q10" value="D"> Tidak wajib sama sekali</label>
+      </div>
+
+      <div class="question">
+        <h3>11. Syarat wajib haji yang paling utama adalah...</h3>
+        <label><input type="radio" name="q11" value="A"> Baligh</label>
+        <label><input type="radio" name="q11" value="B"> Berakal</label>
+        <label><input type="radio" name="q11" value="C"> Mampu (istitha’ah)</label>
+        <label><input type="radio" name="q11" value="D"> Tinggal di Makkah</label>
+      </div>
+
+      <div class="question">
+        <h3>12. Syarat sah haji yang paling pokok adalah...</h3>
+        <label><input type="radio" name="q12" value="A"> Membayar dam</label>
+        <label><input type="radio" name="q12" value="B"> Berihram dari miqat</label>
+        <label><input type="radio" name="q12" value="C"> Membaca talbiyah</label>
+        <label><input type="radio" name="q12" value="D"> Membawa bekal</label>
+      </div>
+
+      <div class="question">
+        <h3>13. Rukun haji menurut mazhab Syafi’i berjumlah...</h3>
+        <label><input type="radio" name="q13" value="A"> 4</label>
+        <label><input type="radio" name="q13" value="B"> 5</label>
+        <label><input type="radio" name="q13" value="C"> 6</label>
+        <label><input type="radio" name="q13" value="D"> 7</label>
+      </div>
+
+      <div class="question">
+        <h3>14. Rukun umrah yang membedakan dengan haji adalah...</h3>
+        <label><input type="radio" name="q14" value="A"> Ihram</label>
+        <label><input type="radio" name="q14" value="B"> Thawaf</label>
+        <label><input type="radio" name="q14" value="C"> Sa’i</label>
+        <label><input type="radio" name="q14" value="D"> Tidak ada wukuf di Arafah</label>
+      </div>
+
+      <div class="question">
+        <h3>15. Wajib haji yang harus dilakukan sebelum thawaf wada’ adalah...</h3>
+        <label><input type="radio" name="q15" value="A"> Mabit di Muzdalifah</label>
+        <label><input type="radio" name="q15" value="B"> Sa’i</label>
+        <label><input type="radio" name="q15" value="C"> Mencukur rambut</label>
+        <label><input type="radio" name="q15" value="D"> Menyembelih hadyu</label>
+      </div>
+
+      <div class="question">
+        <h3>16. Tawaf wada’ adalah...</h3>
+        <label><input type="radio" name="q16" value="A"> Thawaf pertama setelah tiba di Makkah</label>
+        <label><input type="radio" name="q16" value="B"> Thawaf wajib sebelum pulang meninggalkan Makkah</label>
+        <label><input type="radio" name="q16" value="C"> Thawaf sunnah sebelum haji</label>
+        <label><input type="radio" name="q16" value="D"> Thawaf khusus pada malam Idul Adha</label>
+      </div>
+
+      <div class="question">
+        <h3>17. Larangan ihram bagi laki-laki adalah...</h3>
+        <label><input type="radio" name="q17" value="A"> Tidak boleh memakai wewangian saja</label>
+        <label><input type="radio" name="q17" value="B"> Tidak boleh memakai pakaian berwarna putih</label>
+        <label><input type="radio" name="q17" value="C"> Tidak boleh memakai pakaian berjahit yang membentuk tubuh</label>
+        <label><input type="radio" name="q17" value="D"> Tidak boleh membawa perbekalan</label>
+      </div>
+
+      <div class="question">
+        <h3>18. Dalil yang melarang berburu hewan darat saat ihram terdapat dalam ayat...</h3>
+        <label><input type="radio" name="q18" value="A"> QS. Al-Maidah: 95</label>
+        <label><input type="radio" name="q18" value="B"> QS. Al-Baqarah: 197</label>
+        <label><input type="radio" name="q18" value="C"> QS. Al-Hajj: 29</label>
+        <label><input type="radio" name="q18" value="D"> QS. At-Taubah: 28</label>
+      </div>
+
+      <div class="question">
+        <h3>19. Hubungan suami istri sebelum tahallul awal saat haji hukumnya...</h3>
+        <label><input type="radio" name="q19" value="A"> Makruh</label>
+        <label><input type="radio" name="q19" value="B"> Dosa ringan</label>
+        <label><input type="radio" name="q19" value="C"> Membatalkan haji</label>
+        <label><input type="radio" name="q19" value="D"> Tidak berpengaruh</label>
+      </div>
+
+      <div class="question">
+        <h3>20. Hadis “Khudzu ‘anni manasikakum” artinya...</h3>
+        <label><input type="radio" name="q20" value="A"> “Ambillah dariku tata cara manasik kalian”</label>
+        <label><input type="radio" name="q20" value="B"> “Kerjakan haji sesuai kemampuan”</label>
+        <label><input type="radio" name="q20" value="C"> “Haji itu adalah Arafah”</label>
+        <label><input type="radio" name="q20" value="D"> “Haji mabrur balasannya surga”</label>
+      </div>
+
+
+
+
+      <!-- Tambahkan soal pilihan ganda lainnya di sini (total 20) -->
+
+      <button type="button" onclick="cekHasil()">Kirim Jawaban</button>
+    </form>
+
+    <div id="hasil" class="result"></div>
+  </div>
+
+  <script>
+    // Jawaban benar (pilihan ganda)
+    const kunci = {
+      q1: "B",
+      q2: "B",
+      q3:"B",
+      q4:"B",
+      q5:"B",
+      q6:"C",
+      q7:"B",
+      q8:"A",
+      q9:"C",
+      q10:"A",
+      q11:"C",
+      q12:"B",
+      q13:"C",
+      q14:"D",
+      q15:"A",
+      q16:"B",
+      q17:"C",
+      q18:"A",
+      q19:"C",
+      q20:"A",
+      // tambahkan q3, q4, dst sesuai jumlah soal
+    };
+
+    function cekHasil() {
+    let benar = 0;
+    const totalPG = Object.keys(kunci).length;
+
+    for (let key in kunci) {
+      const jawab = document.querySelector(`input[name="${key}"]:checked`);
+      if (jawab && jawab.value === kunci[key]) benar++;
+    }
+
+    const nilai = Math.round((benar / totalPG) * 100);
+
+    // Simpan hasil ke localStorage
+    localStorage.setItem("nilaiAkhir", nilai);
+    localStorage.setItem("jawabanBenar", benar);
+    localStorage.setItem("totalSoal", totalPG);
+
+    // Pindah ke halaman hasil
+    window.location.href = "hasilbab5.html";
+  }
+  </script>
+</body>
+</html>
