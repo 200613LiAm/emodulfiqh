@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Fiqh</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("bg_halaman.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 25px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #446644;
+      margin-bottom: 30px;
+    }
+    .question { text-align: left; margin-bottom: 20px; }
+    label {
+      display: block;
+      background: #eef2ff;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    label:hover { background: #dbe4ff; }
+    button {
+      background: #B5C99A;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+    button:hover { background: #B5C99A; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Fiqh</h1>
+
+    <form id="quizForm">
+       <!-- ================== SOAL PILIHAN GANDA ================== -->
+<div class="question">
+  <h3>1. Secara bahasa, kata thaharah berarti …</h3>
+  <label><input type="radio" name="q1" value="A"> Kebaikan</label>
+  <label><input type="radio" name="q1" value="B"> Kesucian</label>
+  <label><input type="radio" name="q1" value="C"> Kebersihan lahiriah saja</label>
+  <label><input type="radio" name="q1" value="D"> Kesempurnaan iman</label>
+</div>
+
+<div class="question">
+  <h3>2. Secara istilah, thaharah berarti …</h3>
+  <label><input type="radio" name="q2" value="A"> Menghilangkan dosa</label>
+  <label><input type="radio" name="q2" value="B"> Mengangkat hadats dan menghilangkan najis</label>
+  <label><input type="radio" name="q2" value="C"> Membersihkan hati dari sifat tercela</label>
+  <label><input type="radio" name="q2" value="D"> Membersihkan debu di badan</label>
+</div>
+
+<div class="question">
+  <h3>3. Dalil Al-Qur’an tentang kewajiban berwudhu terdapat dalam surah …</h3>
+  <label><input type="radio" name="q3" value="A"> Al-Baqarah: 222</label>
+  <label><input type="radio" name="q3" value="B"> Al-Furqan: 48</label>
+  <label><input type="radio" name="q3" value="C"> Al-Ma’idah: 6</label>
+  <label><input type="radio" name="q3" value="D"> Al-Muddatsir: 4</label>
+</div>
+
+<div class="question">
+  <h3>4. Hadis Rasulullah ﷺ yang menunjukkan pentingnya thaharah adalah …</h3>
+  <label><input type="radio" name="q4" value="A"> “Thaharah adalah bagian dari Islam.”</label>
+  <label><input type="radio" name="q4" value="B"> “Kesucian adalah separuh dari iman.”</label>
+  <label><input type="radio" name="q4" value="C"> “Allah mencintai orang-orang yang salat.”</label>
+  <label><input type="radio" name="q4" value="D"> “Barang siapa berwudhu maka ia masuk surga.”</label>
+</div>
+
+<div class="question">
+  <h3>5. Hadats kecil dapat dihilangkan dengan …</h3>
+  <label><input type="radio" name="q5" value="A"> Mandi wajib</label>
+  <label><input type="radio" name="q5" value="B"> Tayammum saja</label>
+  <label><input type="radio" name="q5" value="C"> Wudhu</label>
+  <label><input type="radio" name="q5" value="D"> Menghilangkan najis</label>
+</div>
+
+<div class="question">
+  <h3>6. Najis adalah …</h3>
+  <label><input type="radio" name="q6" value="A"> Keadaan tidak suci</label>
+  <label><input type="radio" name="q6" value="B"> Benda kotor menurut syariat</label>
+  <label><input type="radio" name="q6" value="C"> Segala bentuk dosa</label>
+  <label><input type="radio" name="q6" value="D"> Keadaan lupa niat</label>
+</div>
+
+<div class="question">
+  <h3>7. Najis mughallazhah adalah najis yang berasal dari …</h3>
+  <label><input type="radio" name="q7" value="A"> Manusia</label>
+  <label><input type="radio" name="q7" value="B"> Kotoran hewan</label>
+  <label><input type="radio" name="q7" value="C"> Anjing dan babi</label>
+  <label><input type="radio" name="q7" value="D"> Bayi yang buang air kecil</label>
+</div>
+
+<div class="question">
+  <h3>8. Cara menyucikan najis mughallazhah adalah …</h3>
+  <label><input type="radio" name="q8" value="A"> Dengan sekali siram air</label>
+  <label><input type="radio" name="q8" value="B"> Dengan tiga kali basuhan</label>
+  <label><input type="radio" name="q8" value="C"> Dengan tujuh kali basuhan, salah satunya dengan tanah</label>
+  <label><input type="radio" name="q8" value="D"> Dengan mengelap saja</label>
+</div>
+
+<div class="question">
+  <h3>9. Air mutlak adalah …</h3>
+  <label><input type="radio" name="q9" value="A"> Air yang bercampur benda najis</label>
+  <label><input type="radio" name="q9" value="B"> Air yang masih murni sifat asalnya</label>
+  <label><input type="radio" name="q9" value="C"> Air yang sudah digunakan wudhu</label>
+  <label><input type="radio" name="q9" value="D"> Air yang telah berubah warna, bau, dan rasa</label>
+</div>
+
+<div class="question">
+  <h3>10. Air musta’mal menurut mazhab Syafi’i adalah …</h3>
+  <label><input type="radio" name="q10" value="A"> Suci dan menyucikan</label>
+  <label><input type="radio" name="q10" value="B"> Najis</label>
+  <label><input type="radio" name="q10" value="C"> Suci tapi tidak menyucikan</label>
+  <label><input type="radio" name="q10" value="D"> Haram digunakan</label>
+</div>
+
+<div class="question">
+  <h3>11. Air mutanajjis adalah air …</h3>
+  <label><input type="radio" name="q11" value="A"> Yang tidak berubah sifatnya</label>
+  <label><input type="radio" name="q11" value="B"> Yang terkena najis</label>
+  <label><input type="radio" name="q11" value="C"> Yang mengalir dari sungai</label>
+  <label><input type="radio" name="q11" value="D"> Yang lebih dari dua qullah</label>
+</div>
+
+<div class="question">
+  <h3>12. Wudhu secara istilah adalah …</h3>
+  <label><input type="radio" name="q12" value="A"> Membasuh seluruh tubuh dengan air</label>
+  <label><input type="radio" name="q12" value="B"> Mengusap wajah dengan tanah suci</label>
+  <label><input type="radio" name="q12" value="C"> Menggunakan air suci pada anggota tertentu dengan niat</label>
+  <label><input type="radio" name="q12" value="D"> Membersihkan diri dari dosa dengan taubat</label>
+</div>
+
+<div class="question">
+  <h3>13. Rukun wudhu yang benar menurut mazhab Syafi’i berjumlah …</h3>
+  <label><input type="radio" name="q13" value="A"> 4</label>
+  <label><input type="radio" name="q13" value="B"> 5</label>
+  <label><input type="radio" name="q13" value="C"> 6</label>
+  <label><input type="radio" name="q13" value="D"> 7</label>
+</div>
+
+<div class="question">
+  <h3>14. Salah satu sunnah wudhu adalah …</h3>
+  <label><input type="radio" name="q14" value="A"> Membaca doa iftitah</label>
+  <label><input type="radio" name="q14" value="B"> Mengusap telinga</label>
+  <label><input type="radio" name="q14" value="C"> Membasuh wajah dua kali</label>
+  <label><input type="radio" name="q14" value="D"> Membaca doa qunut</label>
+</div>
+
+<div class="question">
+  <h3>15. Wudhu batal jika …</h3>
+  <label><input type="radio" name="q15" value="A"> Menyentuh air</label>
+  <label><input type="radio" name="q15" value="B"> Menyentuh mushaf dengan sarung tangan</label>
+  <label><input type="radio" name="q15" value="C"> Bersentuhan kulit dengan lawan jenis bukan mahram</label>
+  <label><input type="radio" name="q15" value="D"> Membaca Al-Qur’an</label>
+</div>
+
+<div class="question">
+  <h3>16. Hikmah wudhu antara lain adalah …</h3>
+  <label><input type="radio" name="q16" value="A"> Menghapus dosa-dosa kecil</label>
+  <label><input type="radio" name="q16" value="B"> Mengangkat derajat surga</label>
+  <label><input type="radio" name="q16" value="C"> Mendapat pahala haji</label>
+  <label><input type="radio" name="q16" value="D"> Menghapus semua dosa besar</label>
+</div>
+
+<div class="question">
+  <h3>17. Sebab-sebab mandi wajib, kecuali …</h3>
+  <label><input type="radio" name="q17" value="A"> Haid</label>
+  <label><input type="radio" name="q17" value="B"> Junub</label>
+  <label><input type="radio" name="q17" value="C"> Nifas</label>
+  <label><input type="radio" name="q17" value="D"> Tidur panjang</label>
+</div>
+
+<div class="question">
+  <h3>18. Rukun mandi wajib ada …</h3>
+  <label><input type="radio" name="q18" value="A"> Dua: niat dan meratakan air ke seluruh tubuh</label>
+  <label><input type="radio" name="q18" value="B"> Tiga: niat, berwudhu, dan mandi</label>
+  <label><input type="radio" name="q18" value="C"> Empat: niat, basmalah, wudhu, mandi</label>
+  <label><input type="radio" name="q18" value="D"> Lima: niat, meratakan air, doa, wudhu, dan gosokan</label>
+</div>
+
+<div class="question">
+  <h3>19. Tayammum dilakukan dengan …</h3>
+  <label><input type="radio" name="q19" value="A"> Debu yang suci</label>
+  <label><input type="radio" name="q19" value="B"> Pasir yang najis</label>
+  <label><input type="radio" name="q19" value="C"> Air laut</label>
+  <label><input type="radio" name="q19" value="D"> Lumpur sawah</label>
+</div>
+
+<div class="question">
+  <h3>20. Tayammum membolehkan seseorang untuk …</h3>
+  <label><input type="radio" name="q20" value="A"> Mengganti salat</label>
+  <label><input type="radio" name="q20" value="B"> Mengganti wudhu atau mandi wajib</label>
+  <label><input type="radio" name="q20" value="C"> Menghilangkan najis</label>
+  <label><input type="radio" name="q20" value="D"> Membersihkan kotoran fisik</label>
+</div>
+
+      <!-- dst. sampai q20 -->
+
+      <button type="button" onclick="cekHasil()">Kirim Jawaban</button>
+    </form>
+  </div>
+
+  <script>
+    const kunci = {
+      q1: "B",
+      q2: "B",
+      q3: "C",
+      q4: "B",
+      q5: "C",
+      q6: "B",
+      q7: "C",
+      q8: "C",
+      q9: "B",
+      q10: "C",
+      q11: "B",
+      q12: "C",
+      q13: "C",
+      q14: "B",
+      q15: "C",
+      q16: "A",
+      q17: "D",
+      q18: "A",
+      q19: "A",
+      q20: "B"
+    };
+
+    function cekHasil() {
+      let benar = 0;
+      const total = Object.keys(kunci).length;
+
+      for (let key in kunci) {
+        const jawab = document.querySelector(`input[name="${key}"]:checked`);
+        if (jawab && jawab.value === kunci[key]) benar++;
+      }
+
+      const nilai = Math.round((benar / total) * 100);
+
+      localStorage.setItem("nilaiAkhir", nilai);
+      localStorage.setItem("jawabanBenar", benar);
+      localStorage.setItem("totalSoal", total);
+
+      window.location.href = "hasilbab1.html";
+    }
+  </script>
+</body>
+</html>

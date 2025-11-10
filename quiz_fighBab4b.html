@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Fiqh</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("bg_halaman.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 25px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #446644;
+      margin-bottom: 30px;
+    }
+    .question { text-align: left; margin-bottom: 20px; }
+    label {
+      display: block;
+      background: #eef2ff;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    label:hover { background: #dbe4ff; }
+    button {
+      background: #74866f;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+    button:hover { background: #74866f; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Fiqh</h1>
+
+    <form id="quizForm">
+
+<div class="question">
+  <h3>1. Secara bahasa, zakat berarti…</h3>
+  <label><input type="radio" name="q1" value="A"> Menahan diri</label>
+  <label><input type="radio" name="q1" value="B"> Tumbuh dan berkembang</label>
+  <label><input type="radio" name="q1" value="C"> Kebaikan</label>
+  <label><input type="radio" name="q1" value="D"> Bersyukur</label>
+</div>
+
+<div class="question">
+  <h3>2. Secara istilah, zakat adalah…</h3>
+  <label><input type="radio" name="q2" value="A"> Menyumbang harta sesuai keinginan</label>
+  <label><input type="radio" name="q2" value="B"> Membersihkan jiwa dari dosa</label>
+  <label><input type="radio" name="q2" value="C"> Mengeluarkan sejumlah harta tertentu kepada yang berhak</label>
+  <label><input type="radio" name="q2" value="D"> Menafkahkan harta untuk keluarga</label>
+</div>
+
+<div class="question">
+  <h3>3. Zakat termasuk dalam rukun Islam yang ke…</h3>
+  <label><input type="radio" name="q3" value="A"> Dua</label>
+  <label><input type="radio" name="q3" value="B"> Tiga</label>
+  <label><input type="radio" name="q3" value="C"> Empat</label>
+  <label><input type="radio" name="q3" value="D"> Lima</label>
+</div>
+
+<div class="question">
+  <h3>4. Dalil zakat dalam Al-Qur’an terdapat dalam ayat…</h3>
+  <label><input type="radio" name="q4" value="A"> QS. Al-Baqarah: 183</label>
+  <label><input type="radio" name="q4" value="B"> QS. Al-Baqarah: 43</label>
+  <label><input type="radio" name="q4" value="C"> QS. Al-Maidah: 3</label>
+  <label><input type="radio" name="q4" value="D"> QS. An-Nisa: 36</label>
+</div>
+
+<div class="question">
+  <h3>5. Orang yang mengingkari kewajiban zakat dihukumi…</h3>
+  <label><input type="radio" name="q5" value="A"> Fasik</label>
+  <label><input type="radio" name="q5" value="B"> Munafik</label>
+  <label><input type="radio" name="q5" value="C"> Kafir</label>
+  <label><input type="radio" name="q5" value="D"> Syirik kecil</label>
+</div>
+
+<div class="question">
+  <h3>6. Fungsi zakat menurut QS. At-Taubah: 103 adalah…</h3>
+  <label><input type="radio" name="q6" value="A"> Membersihkan dan menyucikan</label>
+  <label><input type="radio" name="q6" value="B"> Menyebarkan harta</label>
+  <label><input type="radio" name="q6" value="C"> Melatih kesabaran</label>
+  <label><input type="radio" name="q6" value="D"> Menjaga silaturahmi</label>
+</div>
+
+<div class="question">
+  <h3>7. Hadis tentang zakat yang diambil dari orang kaya untuk fakir miskin diriwayatkan ketika Rasulullah mengutus…</h3>
+  <label><input type="radio" name="q7" value="A"> Abu Bakar</label>
+  <label><input type="radio" name="q7" value="B"> Umar bin Khattab</label>
+  <label><input type="radio" name="q7" value="C"> Mu’adz bin Jabal</label>
+  <label><input type="radio" name="q7" value="D"> Ali bin Abi Thalib</label>
+</div>
+
+<div class="question">
+  <h3>8. Zakat fitrah wajib dikeluarkan pada waktu…</h3>
+  <label><input type="radio" name="q8" value="A"> Awal Ramadan</label>
+  <label><input type="radio" name="q8" value="B"> Pertengahan Ramadan</label>
+  <label><input type="radio" name="q8" value="C"> Akhir Ramadan sebelum shalat Id</label>
+  <label><input type="radio" name="q8" value="D"> Setelah Idul Fitri</label>
+</div>
+
+<div class="question">
+  <h3>9. Kadar zakat fitrah adalah…</h3>
+  <label><input type="radio" name="q9" value="A"> 1 kg makanan pokok</label>
+  <label><input type="radio" name="q9" value="B"> 1,5 kg makanan pokok</label>
+  <label><input type="radio" name="q9" value="C"> 2,5–3 kg makanan pokok</label>
+  <label><input type="radio" name="q9" value="D"> 5 kg makanan pokok</label>
+</div>
+
+<div class="question">
+  <h3>10. Zakat fitrah berfungsi untuk…</h3>
+  <label><input type="radio" name="q10" value="A"> Membersihkan harta perdagangan</label>
+  <label><input type="radio" name="q10" value="B"> Menyucikan orang berpuasa</label>
+  <label><input type="radio" name="q10" value="C"> Menambah pahala haji</label>
+  <label><input type="radio" name="q10" value="D"> Menolak bala</label>
+</div>
+
+<div class="question">
+  <h3>11. Zakat mal diwajibkan pada…</h3>
+  <label><input type="radio" name="q11" value="A"> Semua jenis harta</label>
+  <label><input type="radio" name="q11" value="B"> Harta yang mencapai nishab dan haul</label>
+  <label><input type="radio" name="q11" value="C"> Semua pendapatan bulanan</label>
+  <label><input type="radio" name="q11" value="D"> Semua hutang</label>
+</div>
+
+<div class="question">
+  <h3>12. Nishab emas untuk zakat adalah…</h3>
+  <label><input type="radio" name="q12" value="A"> 50 gram</label>
+  <label><input type="radio" name="q12" value="B"> 85 gram</label>
+  <label><input type="radio" name="q12" value="C"> 100 gram</label>
+  <label><input type="radio" name="q12" value="D"> 200 gram</label>
+</div>
+
+<div class="question">
+  <h3>13. Nishab hasil pertanian adalah…</h3>
+  <label><input type="radio" name="q13" value="A"> 200 kg</label>
+  <label><input type="radio" name="q13" value="B"> 400 kg</label>
+  <label><input type="radio" name="q13" value="C"> 500 kg</label>
+  <label><input type="radio" name="q13" value="D"> 653 kg</label>
+</div>
+
+<div class="question">
+  <h3>14. Nishab kambing untuk wajib zakat adalah…</h3>
+  <label><input type="radio" name="q14" value="A"> 10 ekor</label>
+  <label><input type="radio" name="q14" value="B"> 20 ekor</label>
+  <label><input type="radio" name="q14" value="C"> 30 ekor</label>
+  <label><input type="radio" name="q14" value="D"> 40 ekor</label>
+</div>
+
+<div class="question">
+  <h3>15. Nishab sapi untuk wajib zakat adalah…</h3>
+  <label><input type="radio" name="q15" value="A"> 10 ekor</label>
+  <label><input type="radio" name="q15" value="B"> 20 ekor</label>
+  <label><input type="radio" name="q15" value="C"> 30 ekor</label>
+  <label><input type="radio" name="q15" value="D"> 40 ekor</label>
+</div>
+
+<div class="question">
+  <h3>16. Nishab perak untuk zakat adalah…</h3>
+  <label><input type="radio" name="q16" value="A"> 100 gram</label>
+  <label><input type="radio" name="q16" value="B"> 200 gram</label>
+  <label><input type="radio" name="q16" value="C"> 300 gram</label>
+  <label><input type="radio" name="q16" value="D"> 595 gram</label>
+</div>
+
+<div class="question">
+  <h3>17. Golongan mustahik zakat berjumlah…</h3>
+  <label><input type="radio" name="q17" value="A"> 5</label>
+  <label><input type="radio" name="q17" value="B"> 6</label>
+  <label><input type="radio" name="q17" value="C"> 7</label>
+  <label><input type="radio" name="q17" value="D"> 8</label>
+</div>
+
+<div class="question">
+  <h3>18. Orang yang berhak menerima zakat untuk melunasi hutangnya disebut…</h3>
+  <label><input type="radio" name="q18" value="A"> Fakir</label>
+  <label><input type="radio" name="q18" value="B"> Miskin</label>
+  <label><input type="radio" name="q18" value="C"> Gharim</label>
+  <label><input type="radio" name="q18" value="D"> Ibnu sabil</label>
+</div>
+
+<div class="question">
+  <h3>19. Orang yang sedang dalam perjalanan dan kehabisan bekal disebut…</h3>
+  <label><input type="radio" name="q19" value="A"> Fakir</label>
+  <label><input type="radio" name="q19" value="B"> Miskin</label>
+  <label><input type="radio" name="q19" value="C"> Muallaf</label>
+  <label><input type="radio" name="q19" value="D"> Ibnu sabil</label>
+</div>
+
+<div class="question">
+  <h3>20. Ayat tentang pembagian mustahik zakat ada dalam…</h3>
+  <label><input type="radio" name="q20" value="A"> QS. Al-Baqarah: 43</label>
+  <label><input type="radio" name="q20" value="B"> QS. At-Taubah: 60</label>
+  <label><input type="radio" name="q20" value="C"> QS. An-Nisa: 36</label>
+  <label><input type="radio" name="q20" value="D"> QS. Al-An’am: 141</label>
+</div>
+
+
+      <!-- dst. sampai q20 -->
+
+      <button type="button" onclick="cekHasil()">Kirim Jawaban</button>
+    </form>
+  </div>
+
+  <script>
+    const kunci = {
+      q1: "B",
+      q2: "C",
+      q3: "B",
+      q4: "B",
+      q5: "C",
+      q6: "A",
+      q7: "C",
+      q8: "C",
+      q9: "C",
+      q10: "B",
+      q11: "B",
+      q12: "B",
+      q13: "D",
+      q14: "D",
+      q15: "C",
+      q16: "D",
+      q17: "D",
+      q18: "C",
+      q19: "D",
+      q20: "B"
+    };
+
+    function cekHasil() {
+      let benar = 0;
+      const total = Object.keys(kunci).length;
+
+      for (let key in kunci) {
+        const jawab = document.querySelector(`input[name="${key}"]:checked`);
+        if (jawab && jawab.value === kunci[key]) benar++;
+      }
+
+      const nilai = Math.round((benar / total) * 100);
+
+      localStorage.setItem("nilaiAkhir", nilai);
+      localStorage.setItem("jawabanBenar", benar);
+      localStorage.setItem("totalSoal", total);
+
+      window.location.href = "hasilbab4.html";
+    }
+  </script>
+</body>
+</html>

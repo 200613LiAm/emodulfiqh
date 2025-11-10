@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Fiqh</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("bg_halaman.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 25px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #446644;
+      margin-bottom: 30px;
+    }
+    .question { text-align: left; margin-bottom: 20px; }
+    label {
+      display: block;
+      background: #eef2ff;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    label:hover { background: #dbe4ff; }
+    button {
+      background: #B5C99A;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+    button:hover { background: #B5C99A; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Fiqh</h1>
+
+    <form id="quizForm">
+       <!-- ================== SOAL PILIHAN GANDA ================== -->
+
+<div class="question">
+  <h3>1. Secara bahasa, pemulasaraan jenazah atau tajhīzul mayyit berarti…</h3>
+  <label><input type="radio" name="q1" value="A"> Membersihkan dosa mayit</label>
+  <label><input type="radio" name="q1" value="B"> Menghormati keluarga yang ditinggalkan</label>
+  <label><input type="radio" name="q1" value="C"> Mempersiapkan segala sesuatu untuk keperluan jenazah</label>
+  <label><input type="radio" name="q1" value="D"> Menyegerakan pemakaman</label>
+</div>
+
+<div class="question">
+  <h3>2. Hukum pemulasaraan jenazah menurut para ulama adalah…</h3>
+  <label><input type="radio" name="q2" value="A"> Fardhu ‘ain</label>
+  <label><input type="radio" name="q2" value="B"> Fardhu kifayah</label>
+  <label><input type="radio" name="q2" value="C"> Sunnah muakkadah</label>
+  <label><input type="radio" name="q2" value="D"> Wajib individual</label>
+</div>
+
+<div class="question">
+  <h3>3. Dalil kewajiban pemulasaraan jenazah terdapat dalam surah…</h3>
+  <label><input type="radio" name="q3" value="A"> Al-Ma’idah: 32</label>
+  <label><input type="radio" name="q3" value="B"> Al-Baqarah: 183</label>
+  <label><input type="radio" name="q3" value="C"> An-Nisa: 36</label>
+  <label><input type="radio" name="q3" value="D"> Al-Kautsar: 2</label>
+</div>
+
+<div class="question">
+  <h3>4. Hadis tentang hak seorang Muslim atas Muslim lainnya, termasuk mengikuti jenazah, diriwayatkan oleh…</h3>
+  <label><input type="radio" name="q4" value="A"> Tirmidzi</label>
+  <label><input type="radio" name="q4" value="B"> Abu Dawud</label>
+  <label><input type="radio" name="q4" value="C"> Muslim</label>
+  <label><input type="radio" name="q4" value="D"> Ibnu Majah</label>
+</div>
+
+<div class="question">
+  <h3>5. Dalam maqashid syariah, pemulasaraan jenazah termasuk bagian dari…</h3>
+  <label><input type="radio" name="q5" value="A"> Hifzh al-mal</label>
+  <label><input type="radio" name="q5" value="B"> Hifzh an-nafs dan hifzh al-‘irdh</label>
+  <label><input type="radio" name="q5" value="C"> Hifzh ad-din dan hifzh al-aql</label>
+  <label><input type="radio" name="q5" value="D"> Hifzh an-nasl</label>
+</div>
+
+<div class="question">
+  <h3>6. Hukum memandikan jenazah seorang Muslim adalah…</h3>
+  <label><input type="radio" name="q6" value="A"> Wajib ‘ain</label>
+  <label><input type="radio" name="q6" value="B"> Fardhu kifayah</label>
+  <label><input type="radio" name="q6" value="C"> Sunnah muakkadah</label>
+  <label><input type="radio" name="q6" value="D"> Mubah</label>
+</div>
+
+<div class="question">
+  <h3>7. Hadis tentang tata cara memandikan jenazah putri Rasulullah ﷺ diriwayatkan oleh…</h3>
+  <label><input type="radio" name="q7" value="A"> Aisyah r.a.</label>
+  <label><input type="radio" name="q7" value="B"> Ummu ‘Athiyyah r.a.</label>
+  <label><input type="radio" name="q7" value="C"> Hafshah r.a.</label>
+  <label><input type="radio" name="q7" value="D"> Asma’ binti Abu Bakar</label>
+</div>
+
+<div class="question">
+  <h3>8. Pada cucian terakhir ketika memandikan jenazah, disunnahkan menggunakan…</h3>
+  <label><input type="radio" name="q8" value="A"> Air sumur</label>
+  <label><input type="radio" name="q8" value="B"> Air mawar</label>
+  <label><input type="radio" name="q8" value="C"> Kapur barus</label>
+  <label><input type="radio" name="q8" value="D"> Minyak zaitun</label>
+</div>
+
+<div class="question">
+  <h3>9. Jenazah yang gugur dalam perang di jalan Allah tidak dimandikan berdasarkan hadis tentang syuhada…</h3>
+  <label><input type="radio" name="q9" value="A"> Badar</label>
+  <label><input type="radio" name="q9" value="B"> Hunain</label>
+  <label><input type="radio" name="q9" value="C"> Uhud</label>
+  <label><input type="radio" name="q9" value="D"> Khandaq</label>
+</div>
+
+<div class="question">
+  <h3>10. Jumlah lapisan kain kafan bagi laki-laki menurut mazhab Syafi’i adalah…</h3>
+  <label><input type="radio" name="q10" value="A"> Satu lapis</label>
+  <label><input type="radio" name="q10" value="B"> Dua lapis</label>
+  <label><input type="radio" name="q10" value="C"> Tiga lapis</label>
+  <label><input type="radio" name="q10" value="D"> Lima lapis</label>
+</div>
+
+<div class="question">
+  <h3>11. Warna kain kafan yang disunnahkan menurut hadis Nabi ﷺ adalah…</h3>
+  <label><input type="radio" name="q11" value="A"> Hitam</label>
+  <label><input type="radio" name="q11" value="B"> Putih</label>
+  <label><input type="radio" name="q11" value="C"> Kuning</label>
+  <label><input type="radio" name="q11" value="D"> Cokelat</label>
+</div>
+
+<div class="question">
+  <h3>12. Hukum shalat jenazah adalah…</h3>
+  <label><input type="radio" name="q12" value="A"> Wajib ‘ain</label>
+  <label><input type="radio" name="q12" value="B"> Fardhu kifayah</label>
+  <label><input type="radio" name="q12" value="C"> Sunnah muakkadah</label>
+  <label><input type="radio" name="q12" value="D"> Sunnah ghairu muakkadah</label>
+</div>
+
+<div class="question">
+  <h3>13. Jumlah takbir dalam shalat jenazah adalah…</h3>
+  <label><input type="radio" name="q13" value="A"> Tiga</label>
+  <label><input type="radio" name="q13" value="B"> Empat</label>
+  <label><input type="radio" name="q13" value="C"> Lima</label>
+  <label><input type="radio" name="q13" value="D"> Enam</label>
+</div>
+
+<div class="question">
+  <h3>14. Setelah takbir ketiga dalam shalat jenazah, yang dibaca adalah…</h3>
+  <label><input type="radio" name="q14" value="A"> Al-Fatihah</label>
+  <label><input type="radio" name="q14" value="B"> Shalawat</label>
+  <label><input type="radio" name="q14" value="C"> Doa untuk jenazah</label>
+  <label><input type="radio" name="q14" value="D"> Salam</label>
+</div>
+
+<div class="question">
+  <h3>15. Dalam posisi berdiri saat shalat jenazah, imam berdiri sejajar dengan bagian…</h3>
+  <label><input type="radio" name="q15" value="A"> Kepala jenazah laki-laki dan tengah tubuh jenazah perempuan</label>
+  <label><input type="radio" name="q15" value="B"> Kepala jenazah perempuan</label>
+  <label><input type="radio" name="q15" value="C"> Tengah tubuh semua jenazah</label>
+  <label><input type="radio" name="q15" value="D"> Kaki jenazah</label>
+</div>
+
+<div class="question">
+  <h3>16. Salah satu doa yang diajarkan Nabi ﷺ dalam shalat jenazah dimulai dengan kalimat…</h3>
+  <label><input type="radio" name="q16" value="A"> Allahumma salli ‘ala Muhammad…</label>
+  <label><input type="radio" name="q16" value="B"> Allahumma aghfir lahu warhamhu…</label>
+  <label><input type="radio" name="q16" value="C"> Bismillahi rahmani rahim…</label>
+  <label><input type="radio" name="q16" value="D"> Subhanaka Allahumma wabihamdika…</label>
+</div>
+
+<div class="question">
+  <h3>17. Hukum menguburkan jenazah adalah…</h3>
+  <label><input type="radio" name="q17" value="A"> Sunnah muakkadah</label>
+  <label><input type="radio" name="q17" value="B"> Fardhu kifayah</label>
+  <label><input type="radio" name="q17" value="C"> Wajib ‘ain</label>
+  <label><input type="radio" name="q17" value="D"> Mubah</label>
+</div>
+
+<div class="question">
+  <h3>18. Ayat tentang perintah mengubur jenazah yang pertama kali ditunjukkan oleh gagak terdapat dalam surah…</h3>
+  <label><input type="radio" name="q18" value="A"> Al-Hajj: 32</label>
+  <label><input type="radio" name="q18" value="B"> Abasa: 21</label>
+  <label><input type="radio" name="q18" value="C"> Al-Ma’idah: 31</label>
+  <label><input type="radio" name="q18" value="D"> Thaha: 55</label>
+</div>
+
+<div class="question">
+  <h3>19. Sunnah dalam posisi jenazah di dalam kubur adalah…</h3>
+  <label><input type="radio" name="q19" value="A"> Telentang menghadap langit</label>
+  <label><input type="radio" name="q19" value="B"> Miring ke kanan menghadap kiblat</label>
+  <label><input type="radio" name="q19" value="C"> Miring ke kiri menghadap timur</label>
+  <label><input type="radio" name="q19" value="D"> Duduk menghadap kiblat</label>
+</div>
+
+<div class="question">
+  <h3>20. Hadis “Mematahkan tulang mayit sama seperti mematahkannya ketika hidup” menunjukkan kewajiban…</h3>
+  <label><input type="radio" name="q20" value="A"> Menyegerakan pemakaman</label>
+  <label><input type="radio" name="q20" value="B"> Menghormati jasad mayit</label>
+  <label><input type="radio" name="q20" value="C"> Membersihkan tubuh jenazah</label>
+  <label><input type="radio" name="q20" value="D"> Menyalatkan jenazah</label>
+</div>
+
+
+
+
+
+      <!-- Tambahkan soal pilihan ganda lainnya di sini (total 20) -->
+
+      <button type="button" onclick="cekHasil()">Kirim Jawaban</button>
+    </form>
+
+    <div id="hasil" class="result"></div>
+  </div>
+
+  <script>
+    // Jawaban benar (pilihan ganda)
+    const kunci = {
+      q1:"C",
+      q2:"B",
+      q3:"A",
+      q4:"C",
+      q5:"B",
+      q6:"B",
+      q7:"B",
+      q8:"C",
+      q9:"C",
+      q10:"C",
+      q11:"B",
+      q12:"B",
+      q13:"B",
+      q14:"C",
+      q15:"A",
+      q16:"B",
+      q17:"B",
+      q18:"C",
+      q19:"B",
+      q20:"B",
+      // tambahkan q3, q4, dst sesuai jumlah soal
+    };
+
+    function cekHasil() {
+    let benar = 0;
+    const totalPG = Object.keys(kunci).length;
+
+    for (let key in kunci) {
+      const jawab = document.querySelector(`input[name="${key}"]:checked`);
+      if (jawab && jawab.value === kunci[key]) benar++;
+    }
+
+    const nilai = Math.round((benar / totalPG) * 100);
+
+    // Simpan hasil ke localStorage
+    localStorage.setItem("nilaiAkhir", nilai);
+    localStorage.setItem("jawabanBenar", benar);
+    localStorage.setItem("totalSoal", totalPG);
+
+    // Pindah ke halaman hasil
+    window.location.href = "hasilbab7.html";
+  }
+  </script>
+</body>
+</html>

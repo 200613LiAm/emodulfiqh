@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Fiqh</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("bg_halaman.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 25px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #446644;
+      margin-bottom: 30px;
+    }
+    .question { text-align: left; margin-bottom: 20px; }
+    label {
+      display: block;
+      background: #eef2ff;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    label:hover { background: #dbe4ff; }
+    button {
+      background: #B5C99A;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+    button:hover { background: #B5C99A; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Fiqh</h1>
+
+    <form id="quizForm">
+       <!-- ================== SOAL PILIHAN GANDA ================== -->
+<div class="question">
+  <h3>1. Secara bahasa, qurban berarti…</h3>
+  <label><input type="radio" name="q1" value="A"> Dekat</label>
+  <label><input type="radio" name="q1" value="B"> Suci</label>
+  <label><input type="radio" name="q1" value="C"> Berkah</label>
+  <label><input type="radio" name="q1" value="D"> Kasih sayang</label>
+</div>
+
+<div class="question">
+  <h3>2. Secara istilah, qurban adalah…</h3>
+  <label><input type="radio" name="q2" value="A"> Menyembelih hewan pada hari biasa</label>
+  <label><input type="radio" name="q2" value="B"> Menyembelih hewan tertentu pada hari Idul Adha untuk mendekatkan diri kepada Allah</label>
+  <label><input type="radio" name="q2" value="C"> Menyembelih hewan untuk syukuran</label>
+  <label><input type="radio" name="q2" value="D"> Sedekah makanan</label>
+</div>
+
+<div class="question">
+  <h3>3. Dalil Al-Qur’an tentang qurban terdapat dalam surah…</h3>
+  <label><input type="radio" name="q3" value="A"> Al-Baqarah: 183</label>
+  <label><input type="radio" name="q3" value="B"> Al-Kautsar: 2</label>
+  <label><input type="radio" name="q3" value="C"> An-Nisa: 36</label>
+  <label><input type="radio" name="q3" value="D"> At-Taubah: 60</label>
+</div>
+
+<div class="question">
+  <h3>4. Hukum qurban menurut jumhur ulama adalah…</h3>
+  <label><input type="radio" name="q4" value="A"> Fardhu ‘ain</label>
+  <label><input type="radio" name="q4" value="B"> Sunnah muakkadah</label>
+  <label><input type="radio" name="q4" value="C"> Fardhu kifayah</label>
+  <label><input type="radio" name="q4" value="D"> Makruh</label>
+</div>
+
+<div class="question">
+  <h3>5. Hewan yang boleh dijadikan qurban adalah…</h3>
+  <label><input type="radio" name="q5" value="A"> Ayam, bebek, angsa</label>
+  <label><input type="radio" name="q5" value="B"> Unta, sapi, kambing</label>
+  <label><input type="radio" name="q5" value="C"> Kuda, kerbau, ayam</label>
+  <label><input type="radio" name="q5" value="D"> Semua hewan ternak</label>
+</div>
+
+<div class="question">
+  <h3>6. Usia minimal kambing untuk qurban adalah…</h3>
+  <label><input type="radio" name="q6" value="A"> 1 tahun</label>
+  <label><input type="radio" name="q6" value="B"> 2 tahun</label>
+  <label><input type="radio" name="q6" value="C"> 6 bulan</label>
+  <label><input type="radio" name="q6" value="D"> 3 tahun</label>
+</div>
+
+<div class="question">
+  <h3>7. Usia minimal sapi untuk qurban adalah…</h3>
+  <label><input type="radio" name="q7" value="A"> 1 tahun</label>
+  <label><input type="radio" name="q7" value="B"> 2 tahun</label>
+  <label><input type="radio" name="q7" value="C"> 3 tahun</label>
+  <label><input type="radio" name="q7" value="D"> 4 tahun</label>
+</div>
+
+<div class="question">
+  <h3>8. Usia minimal unta untuk qurban adalah…</h3>
+  <label><input type="radio" name="q8" value="A"> 2 tahun</label>
+  <label><input type="radio" name="q8" value="B"> 3 tahun</label>
+  <label><input type="radio" name="q8" value="C"> 4 tahun</label>
+  <label><input type="radio" name="q8" value="D"> 5 tahun</label>
+</div>
+
+<div class="question">
+  <h3>9. Satu ekor kambing hanya sah untuk…</h3>
+  <label><input type="radio" name="q9" value="A"> 1 orang</label>
+  <label><input type="radio" name="q9" value="B"> 3 orang</label>
+  <label><input type="radio" name="q9" value="C"> 5 orang</label>
+  <label><input type="radio" name="q9" value="D"> 7 orang</label>
+</div>
+
+<div class="question">
+  <h3>10. Satu ekor sapi atau unta sah untuk…</h3>
+  <label><input type="radio" name="q10" value="A"> 1 orang</label>
+  <label><input type="radio" name="q10" value="B"> 3 orang</label>
+  <label><input type="radio" name="q10" value="C"> 5 orang</label>
+  <label><input type="radio" name="q10" value="D"> 7 orang</label>
+</div>
+
+<div class="question">
+  <h3>11. Waktu penyembelihan qurban dimulai pada…</h3>
+  <label><input type="radio" name="q11" value="A"> Malam Idul Adha</label>
+  <label><input type="radio" name="q11" value="B"> Setelah shalat Idul Adha</label>
+  <label><input type="radio" name="q11" value="C"> Sehari sebelum Idul Adha</label>
+  <label><input type="radio" name="q11" value="D"> Setelah hari tasyrik</label>
+</div>
+
+<div class="question">
+  <h3>12. Waktu penyembelihan qurban berakhir pada…</h3>
+  <label><input type="radio" name="q12" value="A"> Malam 11 Dzulhijjah</label>
+  <label><input type="radio" name="q12" value="B"> Malam 12 Dzulhijjah</label>
+  <label><input type="radio" name="q12" value="C"> Malam 13 Dzulhijjah</label>
+  <label><input type="radio" name="q12" value="D"> Malam 14 Dzulhijjah</label>
+</div>
+
+<div class="question">
+  <h3>13. Orang yang mampu tapi tidak berqurban menurut sebagian ulama mendapat…</h3>
+  <label><input type="radio" name="q13" value="A"> Pahala</label>
+  <label><input type="radio" name="q13" value="B"> Keringanan</label>
+  <label><input type="radio" name="q13" value="C"> Ancaman</label>
+  <label><input type="radio" name="q13" value="D"> Sedekah</label>
+</div>
+
+<div class="question">
+  <h3>14. Sunnah bagi orang yang hendak berqurban sejak awal Dzulhijjah adalah…</h3>
+  <label><input type="radio" name="q14" value="A"> Tidak memotong rambut dan kuku</label>
+  <label><input type="radio" name="q14" value="B"> Tidak berhubungan suami istri</label>
+  <label><input type="radio" name="q14" value="C"> Tidak tidur malam</label>
+  <label><input type="radio" name="q14" value="D"> Tidak makan daging</label>
+</div>
+
+<div class="question">
+  <h3>15. Aqiqah secara bahasa berarti…</h3>
+  <label><input type="radio" name="q15" value="A"> Potong</label>
+  <label><input type="radio" name="q15" value="B"> Menyembelih</label>
+  <label><input type="radio" name="q15" value="C"> Rambut bayi</label>
+  <label><input type="radio" name="q15" value="D"> Dekat</label>
+</div>
+
+
+      <div class="question">
+  <h3>16. Aqiqah secara istilah adalah…</h3>
+  <label><input type="radio" name="q16" value="A"> Penyembelihan hewan untuk syukuran kelahiran anak</label>
+  <label><input type="radio" name="q16" value="B"> Penyembelihan hewan setiap Idul Adha</label>
+  <label><input type="radio" name="q16" value="C"> Penyembelihan hewan untuk pernikahan</label>
+  <label><input type="radio" name="q16" value="D"> Sedekah makanan ke fakir miskin</label>
+</div>
+
+<div class="question">
+  <h3>17. Hukum aqiqah menurut jumhur ulama adalah…</h3>
+  <label><input type="radio" name="q17" value="A"> Wajib</label>
+  <label><input type="radio" name="q17" value="B"> Sunnah muakkadah</label>
+  <label><input type="radio" name="q17" value="C"> Mubah</label>
+  <label><input type="radio" name="q17" value="D"> Makruh</label>
+</div>
+
+<div class="question">
+  <h3>18. Hewan aqiqah yang disunnahkan adalah…</h3>
+  <label><input type="radio" name="q18" value="A"> Sapi</label>
+  <label><input type="radio" name="q18" value="B"> Kambing/domba</label>
+  <label><input type="radio" name="q18" value="C"> Ayam</label>
+  <label><input type="radio" name="q18" value="D"> Unta</label>
+</div>
+
+<div class="question">
+  <h3>19. Jumlah hewan aqiqah untuk anak laki-laki adalah…</h3>
+  <label><input type="radio" name="q19" value="A"> 1 ekor kambing</label>
+  <label><input type="radio" name="q19" value="B"> 2 ekor kambing</label>
+  <label><input type="radio" name="q19" value="C"> 3 ekor kambing</label>
+  <label><input type="radio" name="q19" value="D"> 4 ekor kambing</label>
+</div>
+
+<div class="question">
+  <h3>20. Jumlah hewan aqiqah untuk anak perempuan adalah…</h3>
+  <label><input type="radio" name="q20" value="A"> 1 ekor kambing</label>
+  <label><input type="radio" name="q20" value="B"> 2 ekor kambing</label>
+  <label><input type="radio" name="q20" value="C"> 3 ekor kambing</label>
+  <label><input type="radio" name="q20" value="D"> 4 ekor kambing</label>
+</div>
+
+
+
+
+
+      <!-- Tambahkan soal pilihan ganda lainnya di sini (total 20) -->
+
+      <button type="button" onclick="cekHasil()">Kirim Jawaban</button>
+    </form>
+
+    <div id="hasil" class="result"></div>
+  </div>
+
+  <script>
+    // Jawaban benar (pilihan ganda)
+    const kunci = {
+      q1: "A",
+      q2: "B",
+      q3:"B",
+      q4:"B",
+      q5:"B",
+      q6:"A",
+      q7:"B",
+      q8:"D",
+      q9:"A",
+      q10:"D",
+      q11:"B",
+      q12:"C",
+      q13:"C",
+      q14:"A",
+      q15:"C",
+      q16:"A",
+      q17:"B",
+      q18:"B",
+      q19:"B",
+      q20:"A",
+      // tambahkan q3, q4, dst sesuai jumlah soal
+    };
+
+    function cekHasil() {
+    let benar = 0;
+    const totalPG = Object.keys(kunci).length;
+
+    for (let key in kunci) {
+      const jawab = document.querySelector(`input[name="${key}"]:checked`);
+      if (jawab && jawab.value === kunci[key]) benar++;
+    }
+
+    const nilai = Math.round((benar / totalPG) * 100);
+
+    // Simpan hasil ke localStorage
+    localStorage.setItem("nilaiAkhir", nilai);
+    localStorage.setItem("jawabanBenar", benar);
+    localStorage.setItem("totalSoal", totalPG);
+
+    // Pindah ke halaman hasil
+    window.location.href = "hasilbab6.html";
+  }
+  </script>
+</body>
+</html>

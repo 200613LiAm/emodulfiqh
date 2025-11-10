@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasil Quiz Fiqh</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("bg_halaman.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(6px);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #B5C99A;
+      margin-bottom: 20px;
+    }
+
+    .score {
+      font-size: 60px;
+      font-weight: 700;
+      color: #B5C99A;
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+
+    .progress {
+      width: 100%;
+      height: 20px;
+      background: rgba(200, 200, 200, 0.3);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #B5C99A, #74866f);
+      border-radius: 10px;
+      transition: width 1.5s ease-in-out;
+    }
+
+    .info {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .pesan {
+      font-size: 18px;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .pesan.gagal {
+      color: #d32f2f;
+    }
+
+    .pesan.berhasil {
+      color: #2e7d32;
+    }
+
+    button {
+      background: #B5C99A;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 25px;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #B5C99A;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hasil Quiz Fiqh</h1>
+    <div id="nilai" class="score">0</div>
+
+    <div class="progress">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <div class="info" id="info"></div>
+    <div class="pesan" id="pesan"></div>
+
+    <button onclick="kembali()">Kembali ke Kuis</button>
+  </div>
+
+  <script>
+    const nilai = parseInt(localStorage.getItem("nilaiAkhir"));
+    const benar = localStorage.getItem("jawabanBenar");
+    const total = localStorage.getItem("totalSoal");
+
+    const nilaiEl = document.getElementById("nilai");
+    const progressBar = document.getElementById("progressBar");
+    const infoEl = document.getElementById("info");
+    const pesanEl = document.getElementById("pesan");
+
+    if (nilai && benar && total) {
+      let start = 0;
+      const speed = 25; // kecepatan animasi (lebih kecil = lebih cepat)
+
+      const interval = setInterval(() => {
+        if (start >= nilai) {
+          clearInterval(interval);
+        } else {
+          start++;
+          nilaiEl.innerText = start;
+          progressBar.style.width = start + "%";
+        }
+      }, speed);
+
+      infoEl.innerHTML = `
+        Jawaban benar: <b>${benar}</b> dari total <b>${total}</b> soal.<br>
+        Nilai akhir kamu: <b>${nilai}</b>.
+      `;
+
+       // Logika pesan
+      if (nilai <= 70) {
+        pesanEl.innerText = "Maaf, anda belum bisa ke tahap pembelajaran selanjutnya, silahkan ulangi lagi.";
+        pesanEl.classList.add("gagal");
+      } else if (nilai >= 75) {
+        pesanEl.innerText = "Selamat, kamu bisa lanjut ke pembelajaran berikutnya!";
+        pesanEl.classList.add("berhasil");
+      } else {
+        pesanEl.innerText = "Nilai kamu cukup, tapi coba tingkatkan lagi ya!";
+      }
+    } else {
+      nilaiEl.innerText = "-";
+      infoEl.innerText = "Silakan kerjakan kuis terlebih dahulu.";
+    }
+
+    function kembali() {
+      localStorage.clear();
+      window.location.href = "quiz_fighBab3.html";
+    }
+  </script>
+</body>
+</html>

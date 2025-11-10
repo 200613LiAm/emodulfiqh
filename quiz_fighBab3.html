@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Fiqh</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("bg_halaman.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 25px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #446644;
+      margin-bottom: 30px;
+    }
+    .question { text-align: left; margin-bottom: 20px; }
+    label {
+      display: block;
+      background: #eef2ff;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    label:hover { background: #dbe4ff; }
+    button {
+      background: #B5C99A;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+    button:hover { background: #B5C99A; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Fiqh</h1>
+
+    <form id="quizForm">
+       <!-- ================== SOAL PILIHAN GANDA ================== -->
+<div class="question">
+  <h3>1. Secara bahasa, kata “shaum” atau “siyam” berarti …</h3>
+  <label><input type="radio" name="q1" value="A"> Bersyukur</label>
+  <label><input type="radio" name="q1" value="B"> Menahan diri</label>
+  <label><input type="radio" name="q1" value="C"> Menyucikan diri</label>
+  <label><input type="radio" name="q1" value="D"> Meninggalkan dunia</label>
+</div>
+
+<div class="question">
+  <h3>2. Puasa Ramadan hukumnya …</h3>
+  <label><input type="radio" name="q2" value="A"> Fardhu kifayah</label>
+  <label><input type="radio" name="q2" value="B"> Sunnah muakkadah</label>
+  <label><input type="radio" name="q2" value="C"> Fardhu ‘ain</label>
+  <label><input type="radio" name="q2" value="D"> Mubah</label>
+</div>
+
+<div class="question">
+  <h3>3. Dalil kewajiban puasa Ramadan terdapat dalam …</h3>
+  <label><input type="radio" name="q3" value="A"> QS. Al-Baqarah ayat 183–185</label>
+  <label><input type="radio" name="q3" value="B"> QS. Al-Maidah ayat 3</label>
+  <label><input type="radio" name="q3" value="C"> QS. An-Nisa ayat 59</label>
+  <label><input type="radio" name="q3" value="D"> QS. Al-Ikhlas ayat 1</label>
+</div>
+
+<div class="question">
+  <h3>4. Hadis tentang lima rukun Islam yang salah satunya adalah puasa Ramadan diriwayatkan oleh …</h3>
+  <label><input type="radio" name="q4" value="A"> Abu Dawud</label>
+  <label><input type="radio" name="q4" value="B"> Bukhari dan Muslim</label>
+  <label><input type="radio" name="q4" value="C"> Ahmad</label>
+  <label><input type="radio" name="q4" value="D"> Tirmidzi</label>
+</div>
+
+<div class="question">
+  <h3>5. Puasa pada hari raya Idul Fitri dan Idul Adha hukumnya …</h3>
+  <label><input type="radio" name="q5" value="A"> Makruh</label>
+  <label><input type="radio" name="q5" value="B"> Haram</label>
+  <label><input type="radio" name="q5" value="C"> Sunnah</label>
+  <label><input type="radio" name="q5" value="D"> Mubah</label>
+</div>
+
+<div class="question">
+  <h3>6. Dalil kewajiban puasa Ramadan dalam hadis di antaranya adalah …</h3>
+  <label><input type="radio" name="q6" value="A"> “Islam dibangun atas lima perkara …”</label>
+  <label><input type="radio" name="q6" value="B"> “Sesungguhnya amal itu tergantung niat …”</label>
+  <label><input type="radio" name="q6" value="C"> “Sebaik-baik manusia adalah yang bermanfaat …”</label>
+  <label><input type="radio" name="q6" value="D"> “Puasa adalah separuh dari kesabaran …”</label>
+</div>
+
+<div class="question">
+  <h3>7. Salah satu syarat wajib puasa adalah …</h3>
+  <label><input type="radio" name="q7" value="A"> Islam</label>
+  <label><input type="radio" name="q7" value="B"> Kaya</label>
+  <label><input type="radio" name="q7" value="C"> Berpengalaman</label>
+  <label><input type="radio" name="q7" value="D"> Berilmu</label>
+</div>
+
+<div class="question">
+  <h3>8. Anak-anak yang belum baligh …</h3>
+  <label><input type="radio" name="q8" value="A"> Wajib puasa</label>
+  <label><input type="radio" name="q8" value="B"> Sunnah untuk melatih puasa</label>
+  <label><input type="radio" name="q8" value="C"> Haram puasa</label>
+  <label><input type="radio" name="q8" value="D"> Makruh puasa</label>
+</div>
+
+<div class="question">
+  <h3>9. Syarat sah puasa bagi perempuan adalah …</h3>
+  <label><input type="radio" name="q9" value="A"> Tidak sedang nifas atau haid</label>
+  <label><input type="radio" name="q9" value="B"> Sudah menikah</label>
+  <label><input type="radio" name="q9" value="C"> Memiliki wali</label>
+  <label><input type="radio" name="q9" value="D"> Membaca doa khusus</label>
+</div>
+
+<div class="question">
+  <h3>10. Rukun puasa ada dua, yaitu …</h3>
+  <label><input type="radio" name="q10" value="A"> Sahur dan buka</label>
+  <label><input type="radio" name="q10" value="B"> Niat dan imsak</label>
+  <label><input type="radio" name="q10" value="C"> Imsak dan sahur</label>
+  <label><input type="radio" name="q10" value="D"> Doa dan sahur</label>
+</div>
+
+<div class="question">
+  <h3>11. Niat puasa Ramadan menurut mazhab Syafi’i harus dilakukan …</h3>
+  <label><input type="radio" name="q11" value="A"> Setelah Subuh</label>
+  <label><input type="radio" name="q11" value="B"> Sebelum Zawal</label>
+  <label><input type="radio" name="q11" value="C"> Pada malam hari sebelum fajar</label>
+  <label><input type="radio" name="q11" value="D"> Setelah Maghrib</label>
+</div>
+
+<div class="question">
+  <h3>12. Jima’ di siang hari Ramadan mewajibkan qadha dan …</h3>
+  <label><input type="radio" name="q12" value="A"> Fidyah</label>
+  <label><input type="radio" name="q12" value="B"> Kafarat</label>
+  <label><input type="radio" name="q12" value="C"> Sedekah</label>
+  <label><input type="radio" name="q12" value="D"> Istighfar</label>
+</div>
+
+<div class="question">
+  <h3>13. Orang yang muntah tanpa disengaja ketika berpuasa …</h3>
+  <label><input type="radio" name="q13" value="A"> Wajib qadha</label>
+  <label><input type="radio" name="q13" value="B"> Puasanya batal</label>
+  <label><input type="radio" name="q13" value="C"> Puasanya sah</label>
+  <label><input type="radio" name="q13" value="D"> Kena kafarat</label>
+</div>
+
+<div class="question">
+  <h3>14. Jika darah haid keluar di siang Ramadan, maka …</h3>
+  <label><input type="radio" name="q14" value="A"> Puasanya sah</label>
+  <label><input type="radio" name="q14" value="B"> Puasanya batal dan wajib qadha</label>
+  <label><input type="radio" name="q14" value="C"> Haram berpuasa lagi</label>
+  <label><input type="radio" name="q14" value="D"> Tidak perlu qadha</label>
+</div>
+
+<div class="question">
+  <h3>15. Salah satu puasa sunnah adalah …</h3>
+  <label><input type="radio" name="q15" value="A"> Puasa hari raya Idul Fitri</label>
+  <label><input type="radio" name="q15" value="B"> Puasa Senin-Kamis</label>
+  <label><input type="radio" name="q15" value="C"> Puasa hari tasyrik</label>
+  <label><input type="radio" name="q15" value="D"> Puasa Idul Adha</label>
+</div>
+
+<div class="question">
+  <h3>16. Puasa enam hari di bulan Syawal pahalanya seperti …</h3>
+  <label><input type="radio" name="q16" value="A"> Puasa sebulan</label>
+  <label><input type="radio" name="q16" value="B"> Puasa setahun penuh</label>
+  <label><input type="radio" name="q16" value="C"> Puasa seumur hidup</label>
+  <label><input type="radio" name="q16" value="D"> Puasa Ramadan dua kali</label>
+</div>
+
+<div class="question">
+  <h3>17. Qadha puasa adalah …</h3>
+  <label><input type="radio" name="q17" value="A"> Mengganti puasa di luar Ramadan</label>
+  <label><input type="radio" name="q17" value="B"> Membayar fidyah</label>
+  <label><input type="radio" name="q17" value="C"> Mengganti salat dengan puasa</label>
+  <label><input type="radio" name="q17" value="D"> Tebusan dosa dengan sedekah</label>
+</div>
+
+<div class="question">
+  <h3>18. Orang tua renta yang tidak mampu berpuasa wajib …</h3>
+  <label><input type="radio" name="q18" value="A"> Mengqadha</label>
+  <label><input type="radio" name="q18" value="B"> Membayar fidyah</label>
+  <label><input type="radio" name="q18" value="C"> Membayar kafarat</label>
+  <label><input type="radio" name="q18" value="D"> Tidak perlu mengganti</label>
+</div>
+
+<div class="question">
+  <h3>19. Kafarat jima’ di siang Ramadan yang tidak bisa dilakukan adalah …</h3>
+  <label><input type="radio" name="q19" value="A"> Memerdekakan budak</label>
+  <label><input type="radio" name="q19" value="B"> Puasa dua bulan berturut-turut</label>
+  <label><input type="radio" name="q19" value="C"> Membayar zakat</label>
+  <label><input type="radio" name="q19" value="D"> Memberi makan 60 orang miskin</label>
+</div>
+
+<div class="question">
+  <h3>20. Salah satu hikmah puasa adalah …</h3>
+  <label><input type="radio" name="q20" value="A"> Menambah nafsu dunia</label>
+  <label><input type="radio" name="q20" value="B"> Mengajarkan kesabaran</label>
+  <label><input type="radio" name="q20" value="C"> Mengurangi iman</label>
+  <label><input type="radio" name="q20" value="D"> Menjadikan lemah iman</label>
+</div>
+      <!-- dst. sampai q20 -->
+
+      <button type="button" onclick="cekHasil()">Kirim Jawaban</button>
+    </form>
+  </div>
+
+  <script>
+    const kunci = {
+      q1: "B",
+      q2: "C",
+      q3: "A",
+      q4: "B",
+      q5: "B",
+      q6: "A",
+      q7: "A",
+      q8: "B",
+      q9: "A",
+      q10: "B",
+      q11: "C",
+      q12: "B",
+      q13: "C",
+      q14: "B",
+      q15: "B",
+      q16: "B",
+      q17: "A",
+      q18: "B",
+      q19: "C",
+      q20: "B"
+    };
+
+    function cekHasil() {
+      let benar = 0;
+      const total = Object.keys(kunci).length;
+
+      for (let key in kunci) {
+        const jawab = document.querySelector(`input[name="${key}"]:checked`);
+        if (jawab && jawab.value === kunci[key]) benar++;
+      }
+
+      const nilai = Math.round((benar / total) * 100);
+
+      localStorage.setItem("nilaiAkhir", nilai);
+      localStorage.setItem("jawabanBenar", benar);
+      localStorage.setItem("totalSoal", total);
+
+      window.location.href = "hasilbab3.html";
+    }
+  </script>
+</body>
+</html>
